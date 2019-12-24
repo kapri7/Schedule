@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django level two</title>
+    <link rel="stylesheet" href="{%static "css/mystyle.css"%}">
+  </head>
+  <body>
+
+
+<div class="djangotwo">
+
+<table class="table table-bordered">
+<tbody><tr class="text-center">
+<td colspan="5">
+<h4>Перший тиждень</h4></td>
+</tr>
+<tr class="text-center">
+<td colspan="2"><b>Пара</b></td>
+<td colspan="3">Аудиторія | Назва предмету | Викладач | Група</td>
+</tr>
+<tr>
+<td rowspan="7" class="text-center"><b>Пн.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.1' and group_name in acc.group%}
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.3' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.4' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Пон.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Вв.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Втр.1' and group_name in acc.group%}
+
+
+  {{acc.classroom}}
+  | <b>{{acc.discipline}}</b>
+  | <small>{{acc.teacher}}</small>
+  | {{acc.group}}
+  {%endif%}
+  {%endfor%}</td>
+
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Втр.2' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Втр.3' and group_name in acc.group %}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Втр.4' and group_name in acc.group%}
+
+
+                    {{acc.classroom}}
+                    | <b>{{acc.discipline}}</b>
+                    | <small>{{acc.teacher}}</small>
+                    | {{acc.group}}
+                    {%endif%}
+                    {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Втр.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Втр.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Ср.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Срд.1' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Срд.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Срд.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Срд.4' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Срд.4' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Срд.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Чт.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Чтв.1' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Чтв.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Чтв.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Чтв.4' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Чтв.5' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Чтв.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Пт.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Птн.1' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Птн.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Птн.3' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '1.Птн.4' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Птн.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Птн.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Сб.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.1' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.3' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.4' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '1.Суб.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+                  <tr class="text-center">
+<td colspan="5" class="active">
+<h4>Другий тиждень</h4></td>
+</tr>
+<tr class="text-center">
+<td colspan="2"><b>Пара</b></td>
+<td colspan="3">Аудиторія | Назва предмету | Викладач | Група</td>
+</tr>
+<tr class="active">
+<td rowspan="7" class="text-center"><b>Пн.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.1' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.2' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.3' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.4' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Пон.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Вв.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Втр.1' and group_name in acc.group%}
+
+
+  {{acc.classroom}}
+  | <b>{{acc.discipline}}</b>
+  | <small>{{acc.teacher}}</small>
+  | {{acc.group}}
+  {%endif%}
+  {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Втр.2' and group_name in acc.group%}
+
+
+                      {{acc.classroom}}
+                      | <b>{{acc.discipline}}</b>
+                      | <small>{{acc.teacher}}</small>
+                      | {{acc.group}}
+                      {%endif%}
+                      {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Втр.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Втр.4' and group_name in acc.group%}
+
+
+                      {{acc.classroom}}
+                      | <b>{{acc.discipline}}</b>
+                      | <small>{{acc.teacher}}</small>
+                      | {{acc.group}}
+                      {%endif%}
+                      {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Втр.5' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Втр.6' and group_name in acc.group%}
+
+
+{{acc.classroom}}
+| <b>{{acc.discipline}}</b>
+| <small>{{acc.teacher}}</small>
+| {{acc.group}}
+{%endif%}
+{%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Ср.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Срд.1' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Срд.2' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Срд.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Срд.4' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Срд.5' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Срд.6' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Чт.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Чтв.1' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Чтв.2' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Чтв.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Чтв.4' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Чтв.5' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Чтв.6' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Пт.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Птн.1' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Птн.2' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td class="lecture" colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Птн.3' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                        {% for acc in schedule_records %}
+                        {% if acc.dayWeek == '2.Птн.4' and group_name in acc.group%}
+
+
+                     {{acc.classroom}}
+                     | <b>{{acc.discipline}}</b>
+                     | <small>{{acc.teacher}}</small>
+                     | {{acc.group}}
+                     {%endif%}
+                     {%endfor%}
+</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Птн.5' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Птн.6' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+              <tr>
+<td rowspan="7" class="text-center"><b>Сб.</b></td>
+</tr>
+      <tr>
+<td class="text-center">1</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.1' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">2</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.2' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">3</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.3' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">4</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.4' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">5</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.5' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+      <tr>
+<td class="text-center">6</td>
+                      <td colspan="3">
+                      {% for acc in schedule_records %}
+                      {% if acc.dayWeek == '2.Суб.6' and group_name in acc.group%}
+
+
+                   {{acc.classroom}}
+                   | <b>{{acc.discipline}}</b>
+                   | <small>{{acc.teacher}}</small>
+                   | {{acc.group}}
+                   {%endif%}
+                   {%endfor%}</td>
+              </tr>
+          </tbody></table>
+</div>
+  </body>
+</html>

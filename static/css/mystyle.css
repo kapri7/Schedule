@@ -1,0 +1,23 @@
+h1{
+  color: red;
+}
+tr, td {
+        border: 1px solid #999;
+        padding: 10px;
+}
+/* table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} */
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.table-bordered {
+      border: 1px solid #fff;
+}
+.text-center {
+  text-align: center;
+}
